@@ -1,0 +1,42 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: #fff;
+    padding: 0 20px;
+    opacity: 1;
+    border-bottom: 1px solid #ece6e6;
+    box-shadow: 12px;
+    &>div input[type="search"] {
+        border-width: 1px;
+        border-color: gray;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-right: 10px;
+        font-size: 14px;
+        width: 200px;
+        height: 30px;
+        outline: none;
+    }
+    &>div a {
+        padding: 5px 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    &>div a.active {
+        background-color: gray;
+    }
+    .icons {}
+    .icons {
+        height: 30px;
+        height: 30px;
+        border-radius: 50px;
+    }
+    .link {
+        display: flex;
+    }
+}
