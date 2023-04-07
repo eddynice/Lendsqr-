@@ -1,7 +1,7 @@
 a {
     text-decoration: none;
     list-style-type: none;
-    font-size: 18px;
+    font-size: 14px;
     color: #000;
 }
 
@@ -13,6 +13,7 @@ a {
     padding: 0.8rem;
     background-color: #ffffff;
     border-right: 1px solid #ece6e6;
+    scroll-behavior: auto;
 }
 
 .brand-flex {
@@ -40,6 +41,7 @@ a {
     border: none;
     border-color: none;
     margin-bottom: 20px;
+    font-size: 15px;
 }
 
 option {

@@ -10,7 +10,7 @@ import Img7 from "../../asset/face.svg"
 import Img8 from "../../asset/face.svg"
 
 
-export default function sidebar() {
+export default function Sidebar() {
   return (
     <div className='sidebar'>
       <div className='brand-flex'>

@@ -6,3 +6,29 @@
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Nunito', sans-serif;
 }
+
+
+/*/*Customize Bootstrap#
+//If you wish to customize the Bootstrap theme or any Bootstrap variables you can create a custom Sass file:
+
+/* The following block can be included in a custom.scss */
+
+
+/* make the customizations */
+
+
+/*$theme-colors: (
+    "info": tomato,
+    "danger": teal
+);
+
+/* import bootstrap to set changes */
+
+
+/*@import "~bootstrap/scss/bootstrap";
+... And import it on the main Sass file.
+
+/* The following line can be included in a src/App.scss */
+
+
+/*@import "custom";  */

@@ -1,85 +1,60 @@
-import React, { useMemo } from 'react'
+import React from 'react'
 import Sidebar from  "./sidebar"
 import Card from  "./card"
 import './dash.scss'
-import Table from "../Table"
-
- function Index() {
-  const data = useMemo(
-    () => [
-      {
-       organisation:"blind", 
-        username: "John Doe",
-        
-        email: "john.doe@example.com",
-      },
-      {
-        organisation: "Jane Smith",
-        username: 28,
-        email: "jane.smith@example.com",
-      },
-      {
-        name: "Bob Johnson",
-        age: 42,
-        email: "bob.johnson@example.com",
-      },
-    ],
-    []
-  );
-
-  const columns = useMemo(
-    () => [
-      {
-        Header: "Organisation",
-        accessor: "organisation",
-      },
-      {
-        Header: "Username",
-        accessor: "username",
-      },
-      {
-        Header: "Email",
-       accessor: "email",
-      }, 
-      {
-        Header: "Phone Numer",
-       accessor: "Phone Number",
-      }, 
-      {
-        Header: "Date Joined",
-       accessor: "Date Joined",
-      }, 
-      {
-        Header: "Status",
-       accessor: "Status",
-      }, 
-      
-       
-    ],
-    []
-  );
+import PaginationBasic from "../pagination/page"
+import Table from "../Table";
+//import Modal from "react-modal"
+import { fetchPost } from '../../data';
+import { useState } from 'react';
 
 
-
-
+ function Index({items}) {
+ // const [modalOpen, setModal] =useState(false)
+ // const [search, setSearch] =useState(false)
   return (
-
     <div>
-
-
-
 <Sidebar/>
 
     <div className='main'>
       
   <Card/>
-
    <div className='section2'>
-   <Table data={data} columns={columns} />
+
+   <table className="my-table">
+        <thead>
+          <tr>
+            <th>ORGANISATION</th>
+            <th>USERNAME</th>
+            <th>EMAIL</th>
+            <th>PHONE</th>
+            <th>DATE JOINED</th>
+            <th>STATUS</th>
+            <th>edit
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+   {fetchPost.map(item => {
+            return (
+              <tr>
+              <td>{item.orgName}</td>
+              <td>{item.userName}</td>
+              <td>{item.email}</td>
+              <td>{item.phoneNumber}</td>
+              <td>{item.createdAt}</td>
+             
+               <td><button >status</button></td> 
+                
+                <Table/>
+            </tr>
+   );
+  })}
+</tbody>
+</table>
+<PaginationBasic items={items} />
    </div>
     </div>
-
-
     </div>
   )
 }
