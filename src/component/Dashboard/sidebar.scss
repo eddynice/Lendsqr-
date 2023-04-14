@@ -1,94 +1,27 @@
-a {
-    text-decoration: none;
-    list-style-type: none;
-    font-size: 14px;
-    color: #000;
-}
-
-.sidebar {
-    width: 220px;
+.Sidebar {
     position: fixed;
     left: 0;
+    width: 200px;
     height: 100%;
-    padding: 0.8rem;
-    background-color: #ffffff;
-    border-right: 1px solid #ece6e6;
-    scroll-behavior: auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
 }
 
-.brand-flex {
-    display: flex;
-    gap: 30px;
-    align-items: center;
+.Sidebar:hover {
+    transform: translateX(0);
 }
 
-.brand-icons img {
-    font-size: 1.5rem;
-    z-index: 199;
-    border-radius: 10px;
-    color: #fff;
-    position: absolute;
-    height: 20px;
-}
-
-.swicth {}
-
-.select {
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #fff;
-    width: 150px;
-    border: none;
-    border-color: none;
-    margin-bottom: 20px;
-    font-size: 15px;
-}
-
-option {
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-}
-
-.menu-head {
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    background-color: #fff;
-    margin: 10px;
-}
-
-.menu-heads {
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    background-color: #fff;
-    margin-bottom: 5px;
-}
-
-h4 {
-    font-weight: bold;
+.Sidebar ul {
+    list-style: none;
     margin: 0;
-    color: black;
-    font-size: 18px;
-    margin-left: 10px;
+    padding: 0;
 }
 
-.menu-head:hover {
-    background-color: aquamarine;
-    cursor: pointer;
-}
-
-.menu-heads:hover {
-    background-color: aquamarine;
-    cursor: pointer;
-}
-
-.menu-head img {
-    height: 20px;
-}
-
-.menu-heads img {
-    height: 20px;
+.Sidebar li {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    width: 100%;
 }

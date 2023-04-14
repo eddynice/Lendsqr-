@@ -5,7 +5,7 @@ import img from "../../../asset/Vectors.png"
 export default function card() {
   return (
     <div className='card'>
-    <h1>Users</h1> 
+    <h3>Users</h3> 
     <div className='section1'>
     <div className='box'>
      <img src={img} alt="" />
