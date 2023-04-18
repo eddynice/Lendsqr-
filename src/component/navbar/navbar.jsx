@@ -5,6 +5,7 @@ import Img from "../../asset/image 4.png";
 import Img2 from "../../asset/Vectors.png";
 export default function navbar() {
   return (
+    <div className='navbar'>
   <nav>
 <div className='icons'>
 <img alt="picOne" src={Img1} style={{height:"25px"}} />
@@ -30,5 +31,6 @@ export default function navbar() {
 </div>
 
     </nav>
+    </div>
   )
 }

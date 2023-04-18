@@ -63,7 +63,7 @@ export default function Main() {
             <th>PHONE</th>
             <th>DATE JOINED</th>
             <th>STATUS</th>
-            <th>edit
+            <th>
             </th>
           </tr>
         </thead>

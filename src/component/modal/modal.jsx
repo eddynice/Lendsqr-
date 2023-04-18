@@ -2,7 +2,7 @@ import Modal from 'react-modal';
 import { useState } from 'react';
 const customStyles = {
   content : {
-    top                   : '50%',
+    top                   : '20%',
     left                  : '50%',
     right                 : 'auto',
     bottom                : 'auto',
@@ -22,7 +22,7 @@ const isClose=()=>{
 }
     return(
         <div>
-             <button onClick={isOpen}>Open Modal</button>
+             <button onClick={isOpen}>O</button>
         <Modal
           isOpen={modal}
           onAfterOpen={isOpen}
@@ -31,7 +31,7 @@ const isClose=()=>{
           contentLabel="Example Modal"
         >
              <h2 >Hello</h2>
-             form
+             
           <button onClick={isClose}>close</button>
           <div>I am a modal</div>
         </Modal>

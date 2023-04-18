@@ -16,7 +16,7 @@ export default function Table({ datas}) {
               <td>{datas.orgName}</td>
               <td onClick={Callback}  datas={datas} className='tableName'>{datas.userName}</td>
               <td>{datas.email}</td>
-              <td>+234{datas.phoneNumber.replace(/\D/g,'').substr(1)}</td>
+              <td>080{datas.phoneNumber.replace(/\D/g,'').substr(1)}</td>
               <td>{moment(datas.createdAt).format('MMMM Do YYYY, h:mm:ss a')}</td>
               <td>
               <button>status</button>

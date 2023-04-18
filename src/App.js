@@ -5,7 +5,6 @@ import './App.scss';
 
 import Main from "./component/mainPage/main/user";
 import Sidebar from "./component/Dashboard/sidebar";
-import Table from "./component/Dashboard/card"
 function App() {
 
 
@@ -13,12 +12,17 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className="wrapper">
     
-       <Navbar/>
-     <Sidebar/>
-      <Main/>
-      <Table/>
+      <header>
+        <a href="/">hello world</a>
+      </header>
+      <div className="sidebar">
+
+      </div>
+      <main>
+
+      </main>
        
     </div>
   );

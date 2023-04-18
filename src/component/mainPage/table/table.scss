@@ -3,6 +3,7 @@
     width: 100%;
     background-color: #fff;
     box-shadow: 5px;
+    padding-left: 10px;
     th,
     td {
         padding: 5px;
@@ -16,6 +17,7 @@
             td {
                 border-bottom: 1px solid #d8d1d1;
                 font-size: 14px;
+                border-bottom: 1px solid red;
                 tr:nth-child(even) {
                     background-color: #ffff;
                 }
@@ -29,4 +31,9 @@
         display: flex;
         justify-content: space-between;
     }
+}
+
+td {
+    border-bottom: 1px solid red;
+    font-size: 14px;
 }
