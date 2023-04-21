@@ -3,21 +3,29 @@
     justify-content: space-between;
     .box {
         height: 140px;
-        width: 180px;
+        width: 200px;
         background-color: #fff;
         padding: 20px;
         border-radius: 3px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         margin: 30px;
     }
-    img {
-        height: 22px;
-        width: 22px;
-        box-shadow: 0px 0px 10px gray;
-        border-radius: 10px;
-        background-color: aliceblue;
+    .icon-container {
+        position: relative;
+        height: 40px;
+        width: 40px;
+        background-color: #E5E5E5;
+        box-shadow: 0px 0px;
+        border-radius: 50%;
+    }
+    .icon {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        height: 20px;
+        width: 20px;
         opacity: 2;
     }
 }

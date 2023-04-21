@@ -6,6 +6,7 @@ import { fetchPost } from "../../../data";
 import "../table/table.scss";
 import "./user.scss";
 import Pagination from "../../pagination/page"
+import icons from "../../../asset/Vector (4).png"
 
 
 export default function Main() {
@@ -47,16 +48,28 @@ export default function Main() {
   const startIndex = (currentPage - 1) * itemsPerPage;
  	 const endIndex = startIndex + itemsPerPage;
  	  const currentData = filteredData.slice(startIndex, endIndex);
+
+
+
+    const img = [
+      {
+        img:icons
+      }
+    ]
+    console.log(img)
     
   return (
-    <>
+
     
 
 <div className='main'>
       <Card  />
+      <div className="userTable">
 <table className="my-table">
+{img.map((img=>(
 <thead>
-          <tr>
+ 
+<tr>
             <th>ORGANISATION</th>
             <th>USERNAME</th>
             <th>EMAIL</th>
@@ -67,6 +80,8 @@ export default function Main() {
             </th>
           </tr>
         </thead>
+  )))}
+          
         
         {currentData.map(datas=>(
   
@@ -77,13 +92,14 @@ export default function Main() {
  )}
            
 </table>
+
 <input type="text" value={searchQuery} onChange={handleSearch} />
 <button onClick={filterData}>clicks</button>
 <Pagination totalPages={totalPages} currentPage={currentPage} onPageChange={handlePageChange} /> 
-
+</div>
 
 
     </div>
-    </>
+  
   )
 }

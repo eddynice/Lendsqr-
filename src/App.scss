@@ -1,38 +1,13 @@
-.header {}
-
-menu {}
-
-html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-}
-
-body {
-    height: 100%;
-    margin: 0;
-}
-
 .wrapper {
     display: grid;
-    //
-    // grid-template-areas: "header" "sidebar" "main";
-    grid-template-columns: 50px 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
 }
 
-header {
-    grid-column: 1fr;
-    background-color: yellow;
+.header {
+    grid-row: 1/-1;
 }
 
-.sidebar {
-    grid-area: sidebar;
-    background-color: rgb(0, 255, 47);
+.mains {
+    display: flex;
 }
-
-main {
-    grid-area: main;
-    background-color: rgb(20, 20, 19);
-}
-
-header {}

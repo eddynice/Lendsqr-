@@ -1,5 +1,16 @@
 .main {
-    margin: 900px;
     background: #E5E5E5;
     padding: 60px;
+}
+
+.userTable {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 5px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
 }

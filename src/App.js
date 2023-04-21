@@ -12,19 +12,20 @@ function App() {
 
 
   return (
-    <div className="wrapper">
+ <div className="wrappr">
+  <header><Navbar/>
+  </header>
+
+   <div className="mains">
     
-      <header>
-        <a href="/">hello world</a>
-      </header>
-      <div className="sidebar">
-
-      </div>
-      <main>
-
-      </main>
-       
-    </div>
+    <Sidebar/>
+    
+   
+   <Main/>
+  
+  
+   </div>
+ </div>
   );
 }
 

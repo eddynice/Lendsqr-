@@ -1,23 +1,20 @@
 .my-table {
-    border-collapse: collapse;
-    width: 100%;
-    background-color: #fff;
     box-shadow: 5px;
     padding-left: 10px;
     th,
     td {
-        padding: 5px;
+        padding: 10px;
         text-align: left;
+        border-bottom: 1px solid rgb(83, 81, 81);
+        font-size: 16px;
         th {
-            background-color: #fff;
             font-weight: bold;
             .tableName {
                 cursor: pointer;
             }
             td {
                 border-bottom: 1px solid #d8d1d1;
-                font-size: 14px;
-                border-bottom: 1px solid red;
+                border-bottom: 1px solid rgb(83, 81, 81);
                 tr:nth-child(even) {
                     background-color: #ffff;
                 }
@@ -33,7 +30,8 @@
     }
 }
 
-td {
-    border-bottom: 1px solid red;
-    font-size: 14px;
+td {}
+
+.fo {
+    display: flex;
 }

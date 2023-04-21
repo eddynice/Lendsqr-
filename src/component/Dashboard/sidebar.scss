@@ -1,11 +1,10 @@
 .Sidebar {
-    position: absolute;
     -ms-overflow-style: none;
     scrollbar-width: none;
     max-height: calc(100vh - 9rem);
     width: 283px;
     overflow-y: auto;
-    background-color: #f0f0f0;
+    background-color: #fff;
     padding: 20px;
     box-sizing: border-box;
     transition: transform 0.3s ease-in-out;

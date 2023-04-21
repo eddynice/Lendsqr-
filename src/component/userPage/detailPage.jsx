@@ -13,8 +13,10 @@ const DetailPage = ()=>{
     return (
       <>
       <Navbar/>
-      <Sidebar/>
-      {fetchPost.filter(profile => profile.id === id).map((item,i) => 
+      <div className='mains'>
+        <div><Sidebar/></div>
+        <div style={{width:'100%'}}>
+        {fetchPost.filter(profile => profile.id === id).map((item,i) => 
                   <div key={i} className="detail">
                     <div  className="heading">
                     <div className='one'>
@@ -31,7 +33,7 @@ const DetailPage = ()=>{
                 <div className='box'>
                   <div className='details'>
                   <div className='image'>
-                    <img src={Img} alt="oooo"/>
+                    <img src={Img} className='iconss' alt="oooo"/>
                   </div>
                   <div>
                     <h2>{item.profile.firstName} {item.profile.lastName}</h2>
@@ -159,6 +161,10 @@ const DetailPage = ()=>{
            </div>
                  
                 )}
+        </div>
+      </div>
+      
+     
       </>
        
     ) 
