@@ -8,7 +8,7 @@ import "./user.scss";
 import Pagination from "../../pagination/page"
 import icons from "../../../asset/Vector (4).png"
 
-
+console.log(fetchPost)
 export default function Main() {
   const [data, setData] = useState([]);
  const [currentPage, setCurrentPage] = useState(1);
@@ -56,7 +56,7 @@ export default function Main() {
         img:icons
       }
     ]
-    console.log(img)
+
     
   return (
 
@@ -66,7 +66,7 @@ export default function Main() {
       <Card  />
       <div className="userTable">
 <table className="my-table">
-{img.map((img=>(
+
 <thead>
  
 <tr>
@@ -80,7 +80,6 @@ export default function Main() {
             </th>
           </tr>
         </thead>
-  )))}
           
         
         {currentData.map(datas=>(

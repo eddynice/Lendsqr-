@@ -18,10 +18,14 @@ function App() {
 
    <div className="mains">
     
+    <div className="side">
     <Sidebar/>
-    
+    </div>
    
+   <div className="man">
    <Main/>
+   </div>
+
   
   
    </div>

@@ -1,32 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './sidebar.scss';
-function Sidebar() {
+
+const Sidebar = () => {
+  const [active, setActive] = useState(false);
+
+  const handleClick = () => {
+    setActive(!active);
+  };
+
   return (
-    <div className="Sidebar">
-      <h2>My Sidebar</h2>
-      <ul>
-        <li>Link 1</li>
-        <li>Link 2</li>
-        <li>Link 3</li>
-        <li>Link 1</li>
-        <li>Link 2</li>
-        <li>Link 3</li>
-        <li>Link 1</li>
-        <li>Link 2</li>
-        <li>Link 3</li>
-        <li>Link 1</li>
-        <li>Link 2</li>
-        <li>Link 3</li>
-        <li>Link 1</li>
-        <li>Link 2</li>
-        <li>Link 3mdka</li>
-        <li>Link 1</li>
-        <li>Link 2</li>
-        <li>Link xjsk3</li><li>Link 1</li>
-        <li>Link ksksksk2</li>
-        <li>Link 3</li>
-      </ul>
+    <div className={`sidebar ${active ? 'active' : ''}`}>
+      
+<div className="sidebar">
+  <a  href="#home">
+  <li>Home</li>
+  
+  </a>
+  <a href="#news"><li>Home</li></a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a className="" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a className="" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
     </div>
   );
-}
+};
+
 export default Sidebar;

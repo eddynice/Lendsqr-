@@ -7,6 +7,14 @@
     font-family: 'Nunito', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
 
 /*/*Customize Bootstrap#
 //If you wish to customize the Bootstrap theme or any Bootstrap variables you can create a custom Sass file:

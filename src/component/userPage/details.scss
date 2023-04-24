@@ -1,10 +1,14 @@
-a {
-    text-decoration: none;
+.detailcontainer {
+    background: #E5E5E5;
+}
+
+.detailMain {
+    padding: 5px;
+    margin-left: 250px;
 }
 
 .detail {
-    padding: 50px;
-    background-color: #e5e5e5;
+    padding: 40px;
     width: 100%;
 }
 
@@ -13,7 +17,7 @@ a {
     justify-content: space-between;
     background-color: transparent;
     align-items: center;
-    padding: 30px;
+    padding: 40px;
 }
 
 .button Button {

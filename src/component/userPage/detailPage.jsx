@@ -2,7 +2,7 @@ import Button from 'react-bootstrap/Button';
 import "./details.scss"
 import Img from "../../asset/Vector (18).png"
 import {fetchPost} from "../../data"
-import {  useParams,Link } from 'react-router-dom';
+import {useParams,Link} from 'react-router-dom';
 import Sidebar from '../Dashboard/sidebar';
 import Navbar from '../navbar/navbar';
 console.log(fetchPost)
@@ -13,9 +13,9 @@ const DetailPage = ()=>{
     return (
       <>
       <Navbar/>
-      <div className='mains'>
+      <div className='detailcontainer'>
         <div><Sidebar/></div>
-        <div style={{width:'100%'}}>
+        <div className='detailMain' >
         {fetchPost.filter(profile => profile.id === id).map((item,i) => 
                   <div key={i} className="detail">
                     <div  className="heading">

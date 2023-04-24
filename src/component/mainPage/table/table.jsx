@@ -19,7 +19,8 @@ export default function Table({ datas}) {
               <td>080{datas.phoneNumber.replace(/\D/g,'').substr(1)}</td>
               <td>{moment(datas.createdAt).format('MMMM Do YYYY, h:mm:ss a')}</td>
               <td>
-              <button>status</button>
+              <button className={!datas.lastActiveDate ? "red":"blue"
+}></button>
                </td> 
                <td>
                 <Modal/>

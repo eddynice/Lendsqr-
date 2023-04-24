@@ -1,14 +1,38 @@
-
-var grades = [[89, 77],[76, 82, 81],[91, 94, 89, 99]];
-var total = 0;
-var average = 0.0;
-for (var row = 0; row < grades.length; ++row) {
-for (var col = 0; col < grades[row].length; ++col) {
-total += grades[row][col];
-}
-average = total / grades[row].length;
-print("Student " + parseInt(row+1) + " average: " +
-average.toFixed(2));
-total = 0;
-average = 0.0;
-}
+import React, { useState } from 'react'; 
+function EditableTable() { 
+    const [data, setData] = useState([ 
+        { id: 1, name: 'John', email: 'john.doe@example.com' },
+         { id: 2, name: 'Jane Smith', email: 'jane.smith@example.com' }, 
+         { id: 3, name: 'Bob Johnson', email: 'bob.johnson@example.com' },
+         ]); 
+         const [editing, setEditing] = useState(false); 
+         const [editValue, setEditValue] = useState('');
+          const handleEdit = (rowIndex, colIndex, value) => { 
+            setData((prevState) => { const newData = [...prevState];
+                 newData[rowIndex][colIndex] = value; return newData;
+                 });
+                  setEditing(false); 
+                }; 
+                return ( 
+                <table> 
+                    <thead>
+                         <tr>
+                             <th>ID</th>
+                              <th>Name</th>
+                               <th>Email</th>
+                                </tr> </thead>
+                                 <tbody>
+                                     {data.map((row, rowIndex) => (
+                                         <tr key={row.id}> 
+                                         {Object.values(row).map((cell, colIndex) => editing ? (
+                                             <td key={colIndex}> 
+                                             <input type="text" defaultValue={cell} onChange={(e) => setEditValue(e.target.value)} onBlur={() => handleEdit(rowIndex, colIndex, editValue)} /> 
+                                             </td>
+                                              ) : (
+                                                 <td key={colIndex} onClick={() => setEditing(true)}> {cell} 
+                                                 </td>
+                                                  ) )}
+                                                   </tr>
+                                                    ))}
+                                                     </tbody> </table> ); } 
+export default EditableTable;
