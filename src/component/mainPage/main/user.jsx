@@ -3,10 +3,11 @@ import Card from "../card/card";
 import Table from "../table/table"
 import { fetchPost } from "../../../data";
 //import Sidebar from "../../Dashboard/sidebar"
-import "../table/table.scss";
+import "../table/table.css";
 import "./user.scss";
 import Pagination from "../../pagination/page"
 import icons from "../../../asset/Vector (4).png"
+import Sidebar from "../../Dashboard/sidebar";
 
 console.log(fetchPost)
 export default function Main() {
@@ -63,7 +64,12 @@ export default function Main() {
     
 
 <div className='main'>
-      <Card  />
+  <div className="sider">
+  <Sidebar/>
+  </div>
+
+  <div className="useTable">
+      <Card/>
       <div className="userTable">
 <table className="my-table">
 
@@ -95,6 +101,7 @@ export default function Main() {
 <input type="text" value={searchQuery} onChange={handleSearch} />
 <button onClick={filterData}>clicks</button>
 <Pagination totalPages={totalPages} currentPage={currentPage} onPageChange={handlePageChange} /> 
+</div>
 </div>
 
 

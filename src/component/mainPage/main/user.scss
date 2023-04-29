@@ -1,7 +1,18 @@
 .main {
+    display: flex;
     background: #E5E5E5;
-    padding: 60px;
-    margin-left: 250px;
+    gap: 40px;
+    transition: 0.5s linear;
+}
+
+.sider {
+    width: 18%;
+}
+
+.useTable {
+    width: 80%;
+    //background-color: red;
+    padding: 10px;
 }
 
 .userTable {
@@ -11,7 +22,14 @@
     box-shadow: 5px;
 }
 
-.flex {
-    display: flex;
-    flex-direction: column;
+@media screen and (max-width: 700px) {
+    .useTable {
+        width: 100%;
+        //background-color: red;
+        padding: 10px;
+    }
+    .sider {
+        width: 40px;
+        ///height: auto;
+    }
 }

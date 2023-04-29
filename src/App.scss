@@ -5,6 +5,11 @@
     background: #E5E5E5;
 }
 
-.header {
+header {
     grid-row: 1/-1;
+}
+
+.man {
+    display: flex;
+    flex-direction: row;
 }

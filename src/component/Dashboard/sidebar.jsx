@@ -12,21 +12,20 @@ const Sidebar = () => {
     <div className={`sidebar ${active ? 'active' : ''}`}>
       
 <div className="sidebar">
-  <a  href="#home">
-  <li>Home</li>
+  <ul>
+    <li><a href="#homme">Dashboard</a></li>
+    <li><a href="#homme">Customer</a></li>
+    <li><a href="#homme">User</a></li>
+    <li><a href="#homme">Guarator</a></li>
+    <li><a href="#homme">Loans</a></li>
+    <li><a href="#homme">News</a></li>
+    <li><a href="#homme">Home</a></li>
+    <li><a href="#homme">About</a></li>
+    <li><a href="#homme">News</a></li>
+  </ul>
+ 
+ 
   
-  </a>
-  <a href="#news"><li>Home</li></a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-  <a className="" href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-  <a className="" href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
 </div>
     </div>
   );

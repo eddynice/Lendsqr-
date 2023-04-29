@@ -12,15 +12,13 @@ function App() {
 
 
   return (
- <div className="wrappr">
+ <div className="wrapper">
   <header><Navbar/>
   </header>
 
-   <div className="mains">
+   <div className="container">
     
-    <div className="side">
-    <Sidebar/>
-    </div>
+    
    
    <div className="man">
    <Main/>

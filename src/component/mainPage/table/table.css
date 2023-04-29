@@ -1,0 +1,33 @@
+.my-table {
+    box-shadow: 5px;
+    padding-left: 8px;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid rgb(83, 81, 81);
+    font-size: 16px;
+}
+
+th {
+    font-weight: bold;
+}
+
+td {
+    border-bottom: 1px solid #d8d1d1;
+    border-bottom: 1px solid rgb(83, 81, 81);
+}
+
+tr:nth-child(even) {
+    background-color: #ffff;
+}
+
+@media screen and (max-width: 700px) {
+    .my-table {
+        width: 100%;
+        background-color: red;
+        padding: 10px;
+    }
+}

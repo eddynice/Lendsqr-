@@ -6,6 +6,7 @@
     position: absolute;
     height: 100%;
     overflow: auto;
+    transition: 0.5s linear;
 }
 
 .sidebar a {
@@ -17,8 +18,21 @@
 
 .sidebar a.active {}
 
+ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li a {
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}
+
 .sidebar a:hover:not(.active) {
-    background-color: #555;
+    background-color: #0d8a67;
     color: white;
 }
 
@@ -30,9 +44,8 @@ div.content {
 
 @media screen and (max-width: 700px) {
     .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
+        width: 40px;
+        ///height: auto;
     }
     .sidebar a {
         float: left;
