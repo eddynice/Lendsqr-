@@ -4,7 +4,7 @@ import Img from "../../asset/Vector (18).png"
 import {fetchPost} from "../../data"
 import {useParams,Link} from 'react-router-dom';
 import Sidebar from '../Dashboard/sidebar';
-import Navbar from '../navbar/navbar';
+//import Navbar from '../navbar/navbar';
 console.log(fetchPost)
 const DetailPage = ()=>{
   
@@ -12,7 +12,7 @@ const DetailPage = ()=>{
  
     return (
       <>
-      <Navbar/>
+    
       <div className='detailcontainer'>
         <div><Sidebar/></div>
         <div className='detailMain' >
@@ -20,7 +20,7 @@ const DetailPage = ()=>{
                   <div key={i} className="detail">
                     <div  className="heading">
                     <div className='one'>
-                     <Link to={`/`} className='btn light col-4'> ---Back To Users</Link>
+                     <Link to={`/`} className='btn light col-4'> --- Back To Users</Link>
                      <h2>User Details</h2>
                      </div>
         
@@ -93,9 +93,9 @@ const DetailPage = ()=>{
           <th>employment Status</th>
           <th>sector</th>
           <th>duration</th>
-          <th>officeEmail</th>
-          <th>monthlyIncome</th>
-          <th>loanRepaymente</th>
+          <th>office Email</th>
+          <th>monthly  Income</th>
+          <th>loan  Repaymente</th>
           
         </tr>
       </thead>

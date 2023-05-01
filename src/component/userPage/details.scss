@@ -1,5 +1,5 @@
 .detailcontainer {
-    background: #E5E5E5;
+    background: #d24f4f;
 }
 
 .detailMain {
@@ -105,4 +105,33 @@ td {
 th {
     background-color: #fff;
     color: #333;
+}
+
+@media screen and (max-width:768px) {
+    .detailMain {
+        padding: 2px;
+        margin: 0;
+    }
+    .detail {
+        padding: 40px;
+    }
+    .heading {
+        padding: 10px;
+    }
+    tr {
+        margin: 0px;
+    }
+    th,
+    td {
+        text-align: left;
+        padding: 2px;
+    }
+    th {
+        text-align: center;
+        color: #333;
+        font-size: 10px;
+    }
+    td {
+        font-size: 12px;
+    }
 }
