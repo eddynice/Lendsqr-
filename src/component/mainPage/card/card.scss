@@ -36,12 +36,20 @@
             justify-content: flex-start;
             gap: 10px;
             flex-wrap: wrap;
-            margin: 10p;
+            margin: 10px;
         }
         .section1 .box {
             margin: 0;
             height: 70px;
             width: 140px;
             padding: 5px;
+        }
+        .box p,
+        h3 {
+            font-size: 12px;
+        }
+        .icon {
+            height: 10px;
+            width: 10px;
         }
     }

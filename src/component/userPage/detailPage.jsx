@@ -4,7 +4,7 @@ import Img from "../../asset/Vector (18).png"
 import {fetchPost} from "../../data"
 import {useParams,Link} from 'react-router-dom';
 import Sidebar from '../Dashboard/sidebar';
-//import Navbar from '../navbar/navbar';
+import Navbar from '../navbar/navbar';
 console.log(fetchPost)
 const DetailPage = ()=>{
   
@@ -12,7 +12,7 @@ const DetailPage = ()=>{
  
     return (
       <>
-    
+    <Navbar/>
       <div className='detailcontainer'>
         <div><Sidebar/></div>
         <div className='detailMain' >
